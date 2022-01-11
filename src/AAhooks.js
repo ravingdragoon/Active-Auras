@@ -30,6 +30,7 @@ Hooks.on("createToken", (token) => {
     if (!AAgm) return;
     try {
         if (getProperty(token, "data.flags.multilevel-tokens")) return
+        if(AuraMap.get(token.parent.id).effects.length > 0) {debouncedCollate(canvas.scene.id, true, false, "createToken")}
         for (let effect of token.actor.effects?.contents) {
             if (effect.data.flags.ActiveAuras?.isAura) {
                 if (AAdebug) console.log("createToken, collate auras true false")
@@ -41,6 +42,7 @@ Hooks.on("createToken", (token) => {
         if (error.message === "Cannot read property 'effects' of null")
             console.error(token, `This token has a no actor linked to it, please cleanup this token`)
     }
+
 });
 
 Hooks.on("updateCombat", async (combat, changed, options, userId) => {
