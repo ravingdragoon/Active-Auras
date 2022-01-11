@@ -4,8 +4,8 @@
   "description": "Active-Auras",
   "author": "Kandashi",
   "authors": [],
-  "url": "https://github.com/kandashi/Active-Auras",
-  "bugs": "https://github.com/kandashi/Active-Auras/issues",
+  "url": "https://github.com/jputman/Active-Auras",
+  "bugs": "https://github.com/jputman/Active-Auras/issues",
   "flags": {},
   "version": "0.3.02",
   "minimumCoreVersion": "9",
@@ -89,8 +89,8 @@
   }
   ],
   "socket": true,
-  "manifest": "https://raw.githubusercontent.com/kandashi/Active-Auras/main/module.json",
-  "download": "https://github.com/kandashi/Active-Auras/archive/main.zip",
+  "manifest": "https://raw.githubusercontent.com/jputman/Active-Auras/main/module.json",
+  "download": "https://github.com/jputman/Active-Auras/archive/refs/tags/0.3.09.zip",
   "protected": false,
   "coreTranslation": false
 }
