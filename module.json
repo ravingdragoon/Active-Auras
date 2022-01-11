@@ -90,7 +90,7 @@
   ],
   "socket": true,
   "manifest": "https://raw.githubusercontent.com/kandashi/Active-Auras/main/module.json",
-  "download": "https://github.com/kandashi/Active-Auras/archive/main.zip",
+  "download": "https://github.com/ravingdragoon/Active-Auras/releases/download/0.3.08/Active-Auras-0.3.08.zip",
   "protected": false,
   "coreTranslation": false
 }
