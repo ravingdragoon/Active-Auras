@@ -11,7 +11,7 @@ class AAmeasure {
         const gs = canvas.dimensions.size
         const g2 = gs / 2;
 
-        if (!AAmeasure.boundingCheck(target, source, radius)) return false;
+        AAmeasure.boundingCheck(target, source, radius)
         const auraPoly = shape
         if (AAdebug) {
             canvas.foreground.children.find(i => i.inAura)?.destroy()
@@ -105,7 +105,7 @@ class AAmeasure {
             let check = canvas.foreground.addChild(g)
             check.boundingCheck = true
         }
-        return !(t1.data.x < xMin || t1.data.x > xMax || t1.data.y > yMax || t1.data.y < yMin);
+        if (t1.data.x < xMin || t1.data.x > xMax || t1.data.y > yMax || t1.data.y < yMin) return false;
     }
 
 
